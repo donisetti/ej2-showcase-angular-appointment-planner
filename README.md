@@ -29,5 +29,5 @@ Check all the showcase samples from <a href="https://ej2.syncfusion.com/home/ang
 
 ## Note
 
-Se você vir um banner de licença ao executar seu aplicativo, significa que você precisa obter uma chave de licença e registrá-la no aplicativo para usar os componentes do Syncfusion.Você pode encontrar mais informações sobre como obter e registrar uma chave de licença em nosso
-<a href="https://ej2.syncfusion.com/angular/documentation/licensing/overview" target="_blank">Visão geral do licenciamento</a> página.
+Se você vir um banner de licença ao executar seu aplicativo, significa que você precisa obter uma chave de licença e registrá-la no aplicativo para usar os componentes do Syncfusion.Você pode encontrar mais informações sobre como obter e registrar uma chave de licença em nossa página
+<a href="https://ej2.syncfusion.com/angular/documentation/licensing/overview" target="_blank">Visão geral do licenciamento</a>.
