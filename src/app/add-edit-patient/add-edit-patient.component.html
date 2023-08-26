@@ -5,19 +5,19 @@
     <ng-template #content>
       <form id='new-patient-form'>
         <div class="field-container name-container">
-          <ejs-textbox id='Name' name='Name' cssClass='patient-name e-field' placeholder='Patient Name'
+          <ejs-textbox id='Name' name='Name' cssClass='patient-name e-field' placeholder='Nome do paciente'
             floatLabelType='Always'></ejs-textbox>
         </div>
         <div class="field-container gender-container">
           <div class="gender">
-            <div><label>Gender</label></div>
+            <div><label>Gênero</label></div>
             <div class='e-btn-group e-round-corner e-field'>
               <input type="radio" id="doctorCheckMale" name="Gender" value="Male" checked
                 (change)='onGenderChange($event)' />
-              <label class="e-btn" for="doctorCheckMale">Male</label>
+              <label class="e-btn" for="doctorCheckMale">Masculino</label>
               <input type="radio" id="doctorCheckFemale" name="Gender" value="Female"
                 (change)='onGenderChange($event)' />
-              <label class="e-btn" for="doctorCheckFemale">Female</label>
+              <label class="e-btn" for="doctorCheckFemale">Feminino</label>
             </div>
           </div>
           <div class="dob">
@@ -32,7 +32,7 @@
             </ejs-dropdownlist>
           </div>
           <div class="mobile">
-            <ejs-maskedtextbox id='PatientMobile' name='Mobile' cssClass='e-field' width='180px' placeholder='Mobile Number'
+            <ejs-maskedtextbox id='PatientMobile' name='Mobile' cssClass='e-field' width='180px' placeholder='Número de Celular'
               mask="(999) 999-9999" floatLabelType='Always'>
             </ejs-maskedtextbox>
           </div>
@@ -42,15 +42,15 @@
           </ejs-textbox>
         </div>
         <div class="field-container symptom-container">
-          <ejs-textbox cssClass='e-field' id='Symptoms' name='Symptoms' placeholder='Symptoms' floatLabelType='Always'>
+          <ejs-textbox cssClass='e-field' id='Symptoms' name='Symptoms' placeholder='Sintomas' floatLabelType='Always'>
           </ejs-textbox>
         </div>
       </form>
     </ng-template>
     <ng-template #footerTemplate>
       <div class="button-container">
-        <button ejs-button cssClass="e-normal" (click)='onCancelClick()'>Cancel</button>
-        <button ejs-button cssClass="e-normal" [isPrimary]="true" (click)='onSaveClick()'>Save</button>
+        <button ejs-button cssClass="e-normal" (click)='onCancelClick()'>Cancelar</button>
+        <button ejs-button cssClass="e-normal" [isPrimary]="true" (click)='onSaveClick()'>Salvar</button>
       </div>
     </ng-template>
   </ejs-dialog>

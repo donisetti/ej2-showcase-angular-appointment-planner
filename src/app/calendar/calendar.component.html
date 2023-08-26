@@ -12,10 +12,10 @@
         (popupOpen)='onPopupOpen($event)' (eventRendered)='onEventRendered($event)' (navigating)='onNavigation($event)'
         (dataBound)='onDataBound()'>
         <e-resources>
-          <e-resource field='DepartmentId' title='Department' name='Departments' query='resourceQuery'
+          <e-resource field='DepartmentId' title='Departamento' name='Departments' query='resourceQuery'
             [dataSource]='specialistCategory' textField='Text' idField='DepartmentId' colorField='Color'>
           </e-resource>
-          <e-resource field='DoctorId' title='Consultation' name='Doctors' [dataSource]='resourceDataSource'
+          <e-resource field='DoctorId' title='Consulta' name='Doctors' [dataSource]='resourceDataSource'
             textField='Name' idField='Id' groupIDField='DepartmentId' colorField='Color' workDaysField='AvailableDays'
             startHour='StartHour' endHour='EndHour' query='resourceQuery'>
           </e-resource>
@@ -50,10 +50,10 @@
           <div class="e-cell-content">
             <form class="e-schedule-form">
               <div style="padding:10px">
-                <input class="subject e-field" type="text" name="Subject" placeholder="Title" style="width:100%" />
+                <input class="subject e-field" type="text" name="Subject" placeholder="Título" style="width:100%" />
               </div>
               <div style="padding:10px">
-                <input class="location e-field" type="text" name="Location" placeholder="Location" style="width:100%" />
+                <input class="location e-field" type="text" name="Location" placeholder="Localização" style="width:100%" />
               </div>
             </form>
           </div>
@@ -62,11 +62,11 @@
           <div *ngIf="(data.elementType === 'event')">
             <div class="event-content">
               <div class="patient-name-wrap">
-                <label>Patient Name</label>:
+                <label>Nome do paciente</label>:
                 <div><span>{{getPatientName(data)}}</span></div>
               </div>
               <div class="doctor-name-wrap">
-                <label>{{data.DoctorId ? "Doctor Name" : "Department Name"}}</label>:
+                <label>{{data.DoctorId ? "Nome do médico" : "Nome do departamento"}}</label>:
                 <div><span>{{getDoctorName(data)}}</span></div>
               </div>
               <div class="notes-wrap">
@@ -81,15 +81,15 @@
     <div class="treeview-container">
       <div class="choose-Specialist-container">
         <ejs-dropdownlist id='specialist' cssClass="e-specialist-doctors" #dropdownObj [dataSource]='doctorsData'
-          [fields]='fields' placeholder='Choose Specialist' popupHeight='auto' popupWidth='221px' showClearButton='true'
+          [fields]='fields' placeholder='Escolha Especialista' popupHeight='auto' popupWidth='221px' showClearButton='true'
           (change)='onDoctorSelect($event)' (open)='onMultiSelectOpen($event)' [itemTemplate]='itemTemplate'
           [footerTemplate]='footerTemplate'></ejs-dropdownlist>
       </div>
       <div class="add-event-container" style="display: none;">
-        <button ejs-button (click)='createNewEvent($event)' class="e-primary">Add Appointment</button>
+        <button ejs-button (click)='createNewEvent($event)' class="e-primary">Adicionar compromisso</button>
       </div>
       <div class="title-container">
-        <h2 class="title-text">Waiting List</h2>
+        <h2 class="title-text">Lista de espera</h2>
       </div>
       <ejs-treeview #treeObj [fields]='field' cssClass='treeview-external-drag' [allowDragAndDrop]='allowDragAndDrop'
         (nodeDragStop)="onTreeDragStop($event)" (nodeDragging)="onItemDrag($event)">
@@ -122,10 +122,10 @@
       <div class="specialist-header">
         <div>
           <span class="back-icon icon-previous" (click)='onBackIconClick($event)'></span>
-          <span class="title-text">CHOOSE SPECIALIST</span>
+          <span class="title-text">ESCOLHER ESPECIALISTA</span>
         </div>
         <div>
-          <button ejs-button cssClass="e-small" (click)='clearSelection()'>CLEAR</button>
+          <button ejs-button cssClass="e-small" (click)='clearSelection()'>LIMPAR</button>
         </div>
       </div>
     </ng-template>
@@ -144,7 +144,7 @@
     <ng-template #footerTemplate>
       <div class="add-doctor" (click)="onAddClick()">
         <div class="e-icon-add e-icons"></div>
-        <div class="add-doctor-text">Add New Doctor</div>
+        <div class="add-doctor-text">Adicionar novo médico</div>
       </div>
     </ng-template>
   </ejs-dialog>
@@ -157,14 +157,14 @@
       <div class="waitlist-header">
         <div class="text-container">
           <span class="back-icon icon-previous" (click)='onBackIconClick($event)'></span>
-          <span class="title-text">Waiting List</span>
+          <span class="title-text">Lista de espera</span>
         </div>
         <div class="button-container">
           <span class="delete-button">
-            <button ejs-button cssClass="e-flat e-small" (click)='onItemDelete()'>Delete</button>
+            <button ejs-button cssClass="e-flat e-small" (click)='onItemDelete()'>Excluir</button>
           </span>
           <span class="add-button">
-            <button ejs-button cssClass="e-flat e-small" (click)='onItemAdd()'>Add</button>
+            <button ejs-button cssClass="e-flat e-small" (click)='onItemAdd()'>Adicionar</button>
           </span>
         </div>
       </div>

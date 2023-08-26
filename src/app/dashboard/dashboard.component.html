@@ -39,14 +39,14 @@
             <div class="e-card-content">
               <ejs-grid [dataSource]='gridData' height='160px'>
                 <e-columns>
-                  <e-column field='Time' width='80' textAlign='Left'></e-column>
-                  <e-column field='Name' width='120' textAlign='Left'></e-column>
-                  <e-column field='DoctorName' headerText='Doctor Name' width='150' textAlign='Left'>
+                  <e-column field='Time' headerText='Hora' width='80' textAlign='Left'></e-column>
+                  <e-column field='Name' headerText='Nome do Paciente' width='120' textAlign='Left'></e-column>
+                  <e-column field='DoctorName' headerText='Nome do médico' width='150' textAlign='Left'>
                     <ng-template #template let-data>
                       <a routerLink="/doctor-details/{{data.DoctorId}}">{{data.DoctorName}}</a>
                     </ng-template>
                   </e-column>
-                  <e-column field='Symptoms' width='150' textAlign='Left' clipMode='EllipsisWithTooltip'></e-column>
+                  <e-column field='Symptoms' headerText='Sintomas' width='150' textAlign='Left' clipMode='EllipsisWithTooltip'></e-column>
                 </e-columns>
               </ejs-grid>
             </div>
@@ -62,7 +62,7 @@
                 [legendSettings]='legendSettings'>
                 <e-series-collection>
                   <e-series [dataSource]='chartData' type='Spline' width='2px' xName='Date' yName='EventCount'
-                    name='Diabetology' legendShape='Circle' fill='#60F238'></e-series>
+                    name='Diabetology'  legendShape='Circle' fill='#60F238'></e-series>
                   <e-series [dataSource]='chartData1' type='Spline' width='2px' xName='Date' yName='EventCount'
                     name='Orthopaedics' legendShape='Circle' fill='#388CF5'></e-series>
                   <e-series [dataSource]='chartData2' type='Spline' width='2px' xName='Date' yName='EventCount'

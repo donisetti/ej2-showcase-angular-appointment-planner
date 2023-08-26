@@ -1,19 +1,19 @@
 <div class="doctors-wrapper">
   <header>
     <div class="module-title">
-      <div class='title'>DOCTORS LIST</div>
+      <div class='title'>LISTA DE MÉDICOS</div>
       <div class='underline'></div>
     </div>
     <div class='add-doctor' (click)="onAddDoctor()">
       <div class="e-icon-add e-icons"></div>
-      <div class="add-doctor-label">Add New</div>
+      <div class="add-doctor-label">Adicionar novo</div>
     </div>
   </header>
   <div class="specialization-detail-wrapper">
     <div class="specialization-types">
       <ejs-dropdownlist id='Specialization' #specializationObj [dataSource]='specializationData'
         [showClearButton]='true' (change)='onSpecializationChange($event)' [fields]='fields'
-        placeholder='Select a Specialization' popupWidth='100%' popupHeight='230px'>
+        placeholder='Selecione uma especialização' popupWidth='100%' popupHeight='230px'>
         <ng-template #itemTemplate let-data>
           <div class="specialist-value">
             <span class="{{data.Id}}" [style.background]="getColor(data)"></span>
@@ -27,7 +27,7 @@
           </div>
         </ng-template>
       </ejs-dropdownlist>
-      <button ejs-button cssClass="e-normal" (click)='onAddDoctor()' [isPrimary]="true">Add New Doctor</button>
+      <button ejs-button cssClass="e-normal" (click)='onAddDoctor()' [isPrimary]="true">Adicionar novo médico</button>
     </div>
     <div #specialistItemObj class='specialist-display'>
       <div (click)='onSpecialistClick($event)' *ngFor="let data of filteredDoctors">
@@ -44,11 +44,11 @@
             <div class="education">{{getEducation(data['Education'])}}</div>
             <div class="specialist-experience">
               <div class="specialization">
-                <span class="label-text">Designation</span>
+                <span class="label-text">Designação</span>
                 <span class="specialization-text">{{data['Designation']}}</span>
               </div>
               <div class="experience">
-                <span class="label-text">Experience</span>
+                <span class="label-text">Experiência</span>
                 <span class="specialization-text">{{data['Experience']}}</span>
               </div>
             </div>

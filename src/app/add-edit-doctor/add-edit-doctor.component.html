@@ -5,23 +5,23 @@
     <ng-template #content>
       <form id='new-doctor-form'>
         <div class="name-container">
-          <ejs-textbox id='Name' name='Name' cssClass='doctor-name e-field' placeholder='Doctor Name'
+          <ejs-textbox id='Name' name='Name' cssClass='doctor-name e-field' placeholder='Nome do médico'
             floatLabelType='Always'></ejs-textbox>
         </div>
         <div class="gender-container">
           <div class="gender">
-            <div><label>Gender</label></div>
+            <div><label>Gênero</label></div>
             <div class='e-btn-group e-round-corner e-field'>
               <input type="radio" id="patientCheckMale" name="Gender" value="Male" checked
                 (change)='onGenderChange($event)' />
-              <label class="e-btn" for="patientCheckMale">Male</label>
+              <label class="e-btn" for="patientCheckMale">Masculino</label>
               <input type="radio" id="patientCheckFemale" name="Gender" value="Female"
                 (change)='onGenderChange($event)' />
-              <label class="e-btn" for="patientCheckFemale">Female</label>
+              <label class="e-btn" for="patientCheckFemale">Femenino</label>
             </div>
           </div>
           <div class="mobile">
-            <ejs-maskedtextbox id='DoctorMobile' name='Mobile' cssClass='e-field' width='180px' placeholder='Mobile Number'
+            <ejs-maskedtextbox id='DoctorMobile' name='Mobile' cssClass='e-field' width='180px' placeholder='Número de Celular'
               mask="(999) 999-9999" floatLabelType='Always'></ejs-maskedtextbox>
           </div>
         </div>
@@ -32,35 +32,35 @@
         <div class="education-container">
           <div class="department">
             <ejs-dropdownlist id='Specialization' width='160px' cssClass='doctor-department e-field' index=0
-              placeholder='Department' floatLabelType='Always' [dataSource]='specializationData' [fields]='fields'>
+              placeholder='Departamento' floatLabelType='Always' [dataSource]='specializationData' [fields]='fields'>
             </ejs-dropdownlist>
           </div>
           <div class="education">
-            <ejs-textbox id='Education' name='Education' cssClass='e-field' width='180px' placeholder='Education'
+            <ejs-textbox id='Education' name='Education' cssClass='e-field' width='180px' placeholder='Educação'
               floatLabelType='Always'></ejs-textbox>
           </div>
         </div>
         <div class="experience-container">
           <div class="experience">
             <ejs-dropdownlist id='Experience' name='Experience' cssClass='e-field' width='160px'
-              placeholder='Experience' index=0 floatLabelType='Always' [dataSource]='experienceData' [fields]='fields'>
+              placeholder='Experiência' index=0 floatLabelType='Always' [dataSource]='experienceData' [fields]='fields'>
             </ejs-dropdownlist>
           </div>
           <div class="designation">
-            <ejs-textbox id='Designation' name='Designation' cssClass='e-field' width='180px' placeholder='Designation'
+            <ejs-textbox id='Designation' name='Designation' cssClass='e-field' width='180px' placeholder='Designação'
               floatLabelType='Always'></ejs-textbox>
           </div>
         </div>
         <div class="duty-container">
-          <ejs-dropdownlist id="DutyTiming" cssClass='e-field' width='100%' placeholder='Duty Timing' index=0
+          <ejs-dropdownlist id="DutyTiming" cssClass='e-field' width='100%' placeholder='Tempo de serviço' index=0
             floatLabelType='Always' [dataSource]='dutyTimingsData' [fields]='fields'></ejs-dropdownlist>
         </div>
       </form>
     </ng-template>
     <ng-template #footerTemplate>
       <div class="button-container">
-        <button ejs-button cssClass="e-normal" (click)='onCancelClick()'>Cancel</button>
-        <button ejs-button cssClass="e-normal" [isPrimary]="true" (click)='onSaveClick()'>Save</button>
+        <button ejs-button cssClass="e-normal" (click)='onCancelClick()'>Cancelar</button>
+        <button ejs-button cssClass="e-normal" [isPrimary]="true" (click)='onSaveClick()'>Salvar</button>
       </div>
     </ng-template>
   </ejs-dialog>
