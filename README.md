@@ -29,5 +29,5 @@ Check all the showcase samples from <a href="https://ej2.syncfusion.com/home/ang
 
 ## Note
 
-If you see a license banner when running your application, it means that you need to obtain a license key and register it within the application in order to use Syncfusion components. You can find more information on how to obtain and register a license key on our 
-<a href="https://ej2.syncfusion.com/angular/documentation/licensing/overview" target="_blank">Licensing overview</a> page.
+Se você vir um banner de licença ao executar seu aplicativo, significa que você precisa obter uma chave de licença e registrá-la no aplicativo para usar os componentes do Syncfusion.Você pode encontrar mais informações sobre como obter e registrar uma chave de licença em nosso
+<a href="https://ej2.syncfusion.com/angular/documentation/licensing/overview" target="_blank">Visão geral do licenciamento</a> página.
