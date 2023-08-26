@@ -1,5 +1,4 @@
-# Essential JS 2 for Angular - Appointment Planner
-
+# Essential JS 2 for Angular - Planejador de compromissos
 This Appointment planner demo application showcases the usage of several Essential JS 2 components in a real world application scenario. This demo explores an appointment scheduling application for doctors in a clinic to manage their appointments with patients.
 
 ## Deployment
