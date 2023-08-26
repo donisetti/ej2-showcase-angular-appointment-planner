@@ -1,11 +1,13 @@
 # Essential JS 2 for Angular - Planejador de compromissos
-This Appointment planner demo application showcases the usage of several Essential JS 2 components in a real world application scenario. This demo explores an appointment scheduling application for doctors in a clinic to manage their appointments with patients.
+Esta demonstração do planejador de compromissos apresenta o uso de vários componentes Essential JS 2 em um cenário de aplicativo do mundo real. 
+
+Esta demonstração explora um aplicativo de agendamento de consultas para médicos em uma clínica para gerenciar seus compromissos com os pacientes.
 
 ## Deployment
 
 ### Install
 
-To install all dependent packages, use the below command
+Para instalar todos os pacotes dependentes, utilize o comando abaixo.
 
 ```sh
 npm install
@@ -13,7 +15,7 @@ npm install
 
 ### Run
 
-To run the sample, use the below command
+Para executar o exemplo, utilize o comando abaixo.
 
 ```sh
 ng serve
